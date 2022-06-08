@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding:0;
+}
+
+#game{
+    position: relative;
+    height: 500px;
+    width:390px;
+    border:1px solid black;
+    margin: 1rem auto;
+    background:url(bg.jpg) ;
+    background-size: contain;
+    overflow: hidden;
+}
+
+#car--two{
+    height:100px;
+    width:130px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    text-align: center;
+    animation: move 2s linear infinite;
+    transform: rotate(180deg);
+}
+
+#car--two img{
+    height:100px;
+}
+
+#car--one{
+    height:100px;
+    width:130px;
+    text-align: center;
+    position: relative;
+    top:400px;
+    left:130px;
+}
+
+#car--one img{
+    height:100px;
+}
+
+@keyframes move{
+    0%{
+        top: 0px;
+    }
+    100%{
+        top:501px;
+    }
+}
+
+#result{
+    background-color: cadetblue;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom:10px;
+    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
+}
+
+#btn{
+    background-color: rgb(187, 135, 235);
+    border: 1.3px dashed  rgb(120, 105, 184);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    padding:10px 20px;
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    transition :transform 0.3s ease-in-out;
+
+}
+#btn:hover{
+    transform: scale(1.2);
+}
+
+
+p{
+    font-size: 20px;
+    letter-spacing: 1.7px;
+    margin-top: 0px;
+}
+
